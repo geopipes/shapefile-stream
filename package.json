@@ -1,0 +1,37 @@
+{
+  "name": "shapefile-stream",
+  "author": "mapzen",
+  "version": "0.0.2",
+  "description": "Streaming shapefile parser",
+  "homepage": "https://github.com/geopipes/shapefile-stream",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/run.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geopipes/shapefile-stream.git"
+  },
+  "keywords": [
+    "shapefile",
+    "stream",
+    "parser"
+  ],
+  "bugs": {
+    "url": "https://github.com/geopipes/shapefile-stream/issues"
+  },
+  "engines": {
+    "node": ">=0.10.26",
+    "npm": ">=1.4.3"
+  },
+  "dependencies": {
+    "shapefile": "^0.3.0",
+    "readable-stream": "~1.0.17",
+    "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "tape": "^2.13.4",
+    "tap-spec": "^0.2.0"
+  }
+}
