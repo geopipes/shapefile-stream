@@ -25,7 +25,7 @@ module.exports.stream = {};
 
 // check the fixtures files are present
 module.exports.stream.fixtures = function(test, common) {
-  test('check fixtures as present', function(t) {
+  test('check fixtures are present', function(t) {
     t.equal( fs.existsSync( fixtures.example.shp ), true, 'fixture file present' );
     t.equal( fs.existsSync( fixtures.example.dbf ), true, 'fixture file present' );
     t.end();
