@@ -4,11 +4,6 @@ var shapefile = require('../'),
     filename = path.resolve( __dirname + '/../test/fixtures/example.shp' );
 
 shapefile.createReadStream( filename )
-  .pipe( require('through2').obj( function( data, enc, next ){
-    data.geometry.coordinates = [];
-    this.push( data, enc );
-    next();
-  }))
   // .pipe( require('through2').obj( function( data, enc, next ){
   //   console.log(
   //     data.type,
